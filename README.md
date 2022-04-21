@@ -41,7 +41,7 @@ the `total_step` in your configs for better performance.
 
 ## Other features of colossalai
 As I mentioned before, using tensor-parallel, pipeline or ZeRO in training DQN is less effective. However, if you want to
-explore other features usage, you could check https://github.com/hpcaitech/ColossalAI-Examples/blob/main/language/gpt/train_gpt.py#L52
+explore other features usage, you could check [GPT example](https://github.com/hpcaitech/ColossalAI-Examples/blob/main/language/gpt/train_gpt.py#L52)
 for `ZeRO` and `pipeline` usage. For using tensor-parallel, you could replace `torch.nn` layers of your networks with layers
 in `colossalai.nn.layer.colossalai_layer`, and set your parallel setting in your configuration file. And colossalai
-would automatically use tensor-parallel. More details please check https://www.colossalai.org/docs/features/1D_tensor_parallel.
+would automatically use tensor-parallel. More details please check [1D_tensor_parallel feature](https://www.colossalai.org/docs/features/1D_tensor_parallel).
